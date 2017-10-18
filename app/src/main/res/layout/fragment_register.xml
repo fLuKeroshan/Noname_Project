@@ -1,0 +1,306 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:id="@+id/TX"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/colorControlHighlight"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context="forevtechnologies.alegriauiux.MainActivity$PlaceholderFragment">
+            <TableRow
+                android:id="@+id/T1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="5"
+                android:elevation="1dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/informalCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/informalLinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/informalImageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="5"
+                            android:background="#B2DFDB"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_contacts_black_24dp" />
+
+                        <TextView
+                            android:id="@+id/informalTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Informal Events"
+                            android:textAlignment="center"
+                            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                            tools:targetApi="lollipop"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/performingArtsCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/performingArtsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/performingArtsImageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="5"
+                            android:background="#FF1744"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_fingerprint_black_24dp" />
+
+                        <TextView
+                            android:id="@+id/performingArtsTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Performing Arts"
+                            android:textAlignment="center"
+                            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                            tools:targetApi="lollipop"/>
+                    </LinearLayout>
+            </android.support.v7.widget.CardView>
+            </TableRow>
+
+            <TableRow
+                        android:id="@+id/T2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp"
+                        android:layout_weight="5"
+                        android:elevation="1dp">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/literaryArtsCardView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:id="@+id/literaryArtsLinearLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/literaryArtsImageView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:layout_weight="5"
+                                    android:background="#B2DFDB"
+                                    android:padding="5dp"
+                                    android:src="@drawable/ic_contacts_black_24dp" />
+
+                                <TextView
+                                    android:id="@+id/literaryArtsTextView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Literary Arts"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                                    tools:targetApi="lollipop"/>
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/managementCardView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:id="@+id/managementLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/managementImageView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:layout_weight="5"
+                                    android:background="#FF1744"
+                                    android:padding="5dp"
+                                    android:src="@drawable/ic_fingerprint_black_24dp" />
+
+                                <TextView
+                                    android:id="@+id/managementTextView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Management"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                                    tools:targetApi="lollipop"/>
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </TableRow>
+
+            <TableRow
+                android:id="@+id/T4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="5"
+                android:elevation="1dp">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/sportsAndGamingCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:id="@+id/sportsAndGamingLinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/sportsAndGamingImageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="5"
+                            android:background="#B2DFDB"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_contacts_black_24dp" />
+
+                        <TextView
+                            android:id="@+id/sportsAndGamingTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Sports and Gaming"
+                            android:textAlignment="center"
+                            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                            tools:targetApi="lollipop"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/technicalCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:id="@+id/technicalLinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/technicalImageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="5"
+                            android:background="#B2DFDB"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_contacts_black_24dp" />
+
+                        <TextView
+                            android:id="@+id/technicalTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Technical"
+                            android:textAlignment="center"
+                            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                            tools:targetApi="lollipop"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/T5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="5"
+                android:elevation="1dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/workshopsEvents"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/workshopsLinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/workshopsImageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="5"
+                            android:background="#B2DFDB"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_contacts_black_24dp" />
+
+                        <TextView
+                            android:id="@+id/workshopsTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Workshops"
+                            android:textAlignment="center"
+                            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                            tools:targetApi="lollipop"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </TableRow>
+
+
+     </TableLayout>
+    </LinearLayout>
+</ScrollView>
