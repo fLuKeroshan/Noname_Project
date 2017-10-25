@@ -31,7 +31,7 @@
         <activity
             android:name=".Profile"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".RegisterActivity"
+        <activity android:name=".RegisterClasses.RegisterActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".ContactsActivity"
@@ -41,6 +41,40 @@
         <activity
             android:name=".Schedule"
             android:label="@string/title_activity_schedule"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".RegisterClasses.RegisterTech"
+            android:label="Register Tech"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisterClasses.RegisterFA"
+            android:label="Register Tech"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisterClasses.RegisterLA"
+            android:label="Register Tech"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisterClasses.RegisterPA"
+            android:label="Register Tech"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisterClasses.RegisterInformal"
+            android:label="Register Tech"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisterClasses.RegisterManagement"
+            android:label="Register Tech"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisterClasses.RegisterGaming"
+            android:label="Register Tech"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisterClasses.RegisterWorkshops"
+            android:label="Register Tech"
             android:theme="@style/AppTheme.NoActionBar" />
 
 

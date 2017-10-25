@@ -1,6 +1,7 @@
-package forevtechnologies.alegriauiux;
+package forevtechnologies.alegriauiux.RegisterClasses;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
@@ -9,7 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TextView;
 
-import com.fujiyuu75.sequent.Sequent;
+import forevtechnologies.alegriauiux.R;
 
 /**
  * Created by ABHIJAY on 10-10-2017.
@@ -17,22 +18,27 @@ import com.fujiyuu75.sequent.Sequent;
 
 public class RegisterActivity extends Activity implements View.OnClickListener {
 
-    CardView informalCardView,performingArtsCardView,managementCardView,workshopsCardView,literaryArtsCardView,sportsAndGamingCardView,technicalCardView;
-    TextView informalTextView,performingArtsTextView,managementTextView,workshopsTextView,literaryArtsTextView,sportsAndGamingTextView,technicalTextView;
-    ImageView informalImageView,performingArtsImageView,managementImageView,workshopsImageView,literaryArtsImageView,sportsAndGamingImageView,technicalImageView;
-    LinearLayout informalLayout,performingArtsLayout,managementLayout,workshopsLayout,literaryArtsLayout,sportsAndGamingLayout,technicalLayout;
+    CardView fineartsCardView,informalCardView,performingArtsCardView,managementCardView,workshopsCardView,literaryArtsCardView,sportsAndGamingCardView,technicalCardView;
+    TextView fineartsTextView,informalTextView,performingArtsTextView,managementTextView,workshopsTextView,literaryArtsTextView,sportsAndGamingTextView,technicalTextView;
+    ImageView fineartsImageView,informalImageView,performingArtsImageView,managementImageView,workshopsImageView,literaryArtsImageView,sportsAndGamingImageView,technicalImageView;
+    LinearLayout fineartsLayout,informalLayout,performingArtsLayout,managementLayout,workshopsLayout,literaryArtsLayout,sportsAndGamingLayout,technicalLayout;
     TableLayout TX,TX1;
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_register);
+        setContentView(R.layout.register_activity_main);
 
         informalCardView = (CardView) findViewById(R.id.informalCardView);
         informalLayout = (LinearLayout) findViewById(R.id.informalLinearLayout);
         informalImageView = (ImageView) findViewById(R.id.informalImageView);
         informalTextView = (TextView) findViewById(R.id.informalTextView);
+
+        fineartsCardView = (CardView) findViewById(R.id.fineartsCardView);
+        fineartsLayout = (LinearLayout) findViewById(R.id.fineartsLayout);
+        fineartsImageView = (ImageView) findViewById(R.id.fineartsImageView);
+        fineartsTextView = (TextView) findViewById(R.id.fineartsTextView);
 
         technicalCardView = (CardView) findViewById(R.id.technicalCardView);
         technicalLayout = (LinearLayout) findViewById(R.id.technicalLinearLayout);
@@ -73,6 +79,11 @@ public class RegisterActivity extends Activity implements View.OnClickListener {
         informalLayout.setOnClickListener(this);
         informalImageView.setOnClickListener(this);
         informalTextView.setOnClickListener(this);
+
+        fineartsCardView.setOnClickListener(this);
+        fineartsLayout.setOnClickListener(this);
+        fineartsImageView.setOnClickListener(this);
+        fineartsTextView.setOnClickListener(this);
 
         literaryArtsCardView.setOnClickListener(this);
         literaryArtsLayout.setOnClickListener(this);
@@ -115,53 +126,60 @@ public class RegisterActivity extends Activity implements View.OnClickListener {
 
         switch(v.getId()){
 
+            case R.id.fineartsCardView:
+            case R.id.fineartsImageView:
+            case R.id.fineartsLayout:
+            case R.id.fineartsTextView:
+                startActivity(new Intent(RegisterActivity.this,RegisterFA.class));
+                break;
+
             case R.id.performingArtsCardView:
             case R.id.performingArtsImageView:
             case R.id.performingArtsLayout:
             case R.id.performingArtsTextView:
-                //TODO add navigation to pages
+                startActivity(new Intent(RegisterActivity.this,RegisterPA.class));
                 break;
 
             case R.id.informalCardView:
             case R.id.informalImageView:
             case R.id.informalLinearLayout:
             case R.id.informalTextView:
-                //TODO add navigation to pages
+                startActivity(new Intent(RegisterActivity.this,RegisterInformal.class));
                 break;
 
             case R.id.sportsAndGamingCardView:
             case R.id.sportsAndGamingImageView:
             case R.id.sportsAndGamingLinearLayout:
             case R.id.sportsAndGamingTextView:
-                //TODO add navigation to pages
+                startActivity(new Intent(RegisterActivity.this,RegisterGaming.class));
                 break;
 
             case R.id.managementCardView:
             case R.id.managementImageView:
             case R.id.managementLayout:
             case R.id.managementTextView:
-                //TODO add navigation to pages
+                startActivity(new Intent(RegisterActivity.this,RegisterManagement.class));
                 break;
 
             case R.id.workshopsEvents:
             case R.id.workshopsLinearLayout:
             case R.id.workshopsImageView:
             case R.id.workshopsTextView:
-                //TODO add navigation to pages
+                startActivity(new Intent(RegisterActivity.this,RegisterWorkshops.class));
                 break;
 
             case R.id.literaryArtsCardView:
             case R.id.literaryArtsImageView:
             case R.id.literaryArtsLinearLayout:
             case R.id.literaryArtsTextView:
-                //TODO add navigation to pages
+                startActivity(new Intent(RegisterActivity.this,RegisterLA.class));
                 break;
 
             case R.id.technicalCardView:
             case R.id.technicalImageView:
             case R.id.technicalLinearLayout:
             case R.id.technicalTextView:
-                //TODO add navigation to pages
+                startActivity(new Intent(RegisterActivity.this,RegisterTech.class));
                 break;
         }
 

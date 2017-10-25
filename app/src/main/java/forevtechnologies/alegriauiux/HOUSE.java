@@ -15,6 +15,8 @@ import android.widget.TextView;
 
 import com.fujiyuu75.sequent.Sequent;
 
+import forevtechnologies.alegriauiux.RegisterClasses.RegisterActivity;
+
 /**
  * Created by thisi on 12-05-2017.
  */
